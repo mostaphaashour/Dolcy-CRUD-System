@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="scss/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="msg">
+      <span></span>
+    </div>
+    <div class="edit_form row">
+      <div class="inner col-lg-6 col-md-4 col-sm-3">
+        <form action="">
+          <div
+            class="line d-flex justify-content-center align-content-between flex-column"
+          >
+            <div class="name">
+              <label for="Name" class="pe-3">Name</label>
+              <input
+                class="inp p-1 w-100"
+                type="text"
+                id="eName"
+                placeholder="Full Name"
+              />
+            </div>
+            <div class="Email mt-2">
+              <label for="Email" class="pe-3">Email</label>
+              <input
+                disabled
+                class="inp p-1 w-100"
+                type="email"
+                id="eEmail"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="Mobile_Number mt-2">
+              <label for="Mobile" class="pe-3">Mobile</label>
+              <input
+                class="inp p-1 w-100"
+                type="text"
+                id="eMobile"
+                value="+20"
+                placeholder="+20"
+              />
+            </div>
+            <div class="Address mt-2">
+              <label for="Address" class="pe-3">Address</label>
+              <input
+                class="inp p-1 w-100"
+                type="text"
+                id="eAddress"
+                placeholder="nth str-city-country"
+              />
+            </div>
+            <div class="Department mt-2">
+              <label for="Department" class="pe-3">Department</label>
+              <input
+                class="inp p-1 w-100"
+                type="text"
+                id="eDepartment"
+                placeholder="IT, CS, OS"
+              />
+            </div>
+          </div>
+          <input
+            type="submit"
+            value="Save"
+            id="Save"
+            class="mt-2 sub text-white btn-outline-danger rounded-bottom rounded-top pt-1 pb-1 pe-2 ps-2"
+          />
+        </form>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-danger">
+      <div
+        class="container-fluid d-flex justify-content-center align-content-center"
+      >
+        <a class="nav-txt navbar-brand text-white fs-1" href="#"
+          >CRUD Operation System</a
+        >
+      </div>
+    </nav>
+    <div class="container-fluid mt-4 all">
+      <div class="row">
+        <div class="form col-lg-3 col-md-12 col-sm-12">
+          <form action="">
+            <div
+              class="line d-flex justify-content-center align-content-between flex-column"
+            >
+              <div class="name">
+                <label for="Name" class="pe-3">Name</label>
+                <input
+                  class="inp p-1 w-100"
+                  type="text"
+                  id="Name"
+                  placeholder="Full Name"
+                />
+              </div>
+              <div class="Email mt-2">
+                <label for="Email" class="pe-3">Email</label>
+                <input
+                  class="inp p-1 w-100"
+                  type="email"
+                  id="Email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="Mobile_Number mt-2">
+                <label for="Mobile" class="pe-3">Mobile</label>
+                <input
+                  class="inp p-1 w-100"
+                  type="text"
+                  id="Mobile"
+                  value="+20"
+                  placeholder="+20"
+                />
+              </div>
+              <div class="Address mt-2">
+                <label for="Address" class="pe-3">Address</label>
+                <input
+                  class="inp p-1 w-100"
+                  type="text"
+                  id="Address"
+                  placeholder="nth str,city,country"
+                />
+              </div>
+              <div class="Department mt-2">
+                <label for="Department" class="pe-3">Department</label>
+                <input
+                  class="inp p-1 w-100"
+                  type="text"
+                  id="Department"
+                  placeholder="IT, CS, OS"
+                />
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="Create"
+              id="submit"
+              class="mt-2 sub text-white btn-outline-danger rounded-bottom rounded-top pt-1 pb-1 pe-2 ps-2"
+            />
+          </form>
+        </div>
+        <div class="data col-lg-8 col-sm-12 mt-lg-0 mt-4 mt-md-4 mt-sm-4">
+          <table class="table">
+            <thead class="bg-gray text-white">
+              <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Mobile</th>
+                <th scope="col">Address</th>
+                <th scope="col">Department</th>
+                <th scope="col" class="text-center">Actions</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+  </body>
+</html>
