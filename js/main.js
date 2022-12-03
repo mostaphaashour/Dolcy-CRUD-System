@@ -260,7 +260,7 @@ function create_element_with_data(
         display: block;
         z-index:10000;
         `;
-        span.innerHTML = "Saved, Make Reload To Page";
+        span.innerHTML = "Saved";
         setTimeout(() => {
           msg.style.cssText = `
           display: none;
